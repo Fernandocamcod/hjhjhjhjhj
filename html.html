@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioTrivia | Reto Futurista</title>
+    <link rel="stylesheet" href="stylee.css">
+</head>
+<body>
+
+    <div id="start-screen" class="screen">
+        <h1>🧬 BioTrivia: Reto Cibernético</h1>
+        <p>Pon a prueba tus conocimientos de biología básica en este entorno futurista. ¡10 preguntas te esperan!</p>
+        <button id="start-button" class="btn">INICIAR SIMULACIÓN</button>
+    </div>
+
+    <div id="game-container" class="screen hidden">
+        <div id="header">
+            <span id="score">Puntaje: 0</span>
+            <span id="question-count">Pregunta: 1/10</span>
+        </div>
+        <div id="question-area">
+            <h2 id="question-text"></h2>
+            <div id="options-container" class="options">
+                </div>
+        </div>
+        <button id="next-button" class="btn hidden">SIGUIENTE &gt;&gt;</button>
+    </div>
+
+    <div id="results-modal" class="modal hidden">
+        <div class="modal-content">
+            <h2>🏆 SIMULACIÓN FINALIZADA 🏆</h2>
+            <p class="final-score"></p>
+            <h3>⚠️ Preguntas a Revisar:</h3>
+            <ul id="incorrect-questions">
+                </ul>
+            <button id="restart-button" class="btn">REINICIAR</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
